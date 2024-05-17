@@ -94,7 +94,6 @@ namespace CSharpAsScript
                GC.WaitForPendingFinalizers();
                Log("Выполнена сборка мусора.");
 
-
                //Console.Write("Нажмите любую клавишу для выхода");
                //Console.ReadLine();
           }
@@ -109,9 +108,5 @@ namespace CSharpAsScript
                long tMemory = GC.GetTotalMemory(false) / 1024;
                Console.WriteLine($"{DateTime.Now.ToLongTimeString()}:{DateTime.Now.Millisecond} \t{tMemory.ToString()} Kb \t{message}");
           }
-
-
-
-
      }
 }
